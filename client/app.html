@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>propvalue</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  <header>
+    <!-- <nav>
+      <div class="nav-bar">
+        <div class="logo-container">
+          <img src="../h1.jpg" alt="">
+          <p>PropValue Pune</p>
+        </div>
+        <div>
+          <button class="contact-button">Contact Us</button>
+        </div>
+      </div>
+    </nav> -->
+
+    <div class="hero-container">
+      <!-- <div class="left-side"> -->
+        <!-- <div class="title-container">
+          <h1>PropValue Pune</h1>
+          <h2>Unlocking Property Price Secrets in Pune</h2>
+        </div> -->
+      <!-- </div> -->
+          <div class="right-side">
+              <form action="">
+                  <div class="parent-inner-container">
+                    
+                    <!-- <div class="form-left-side">
+                      <p>Area (in Square feet) -</p>
+                      <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+                    </div> -->
+
+                    <div class="form-right-side">
+
+                      <div class="form-left-side">
+                        <p>Area (in Square feet) -</p>
+                        <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+                      </div>
+                      <p>BHK -</p>
+                      <div class="inner-container-1">
+                        <div class="switch-field">
+		                    <input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		                    <label for="radio-bhk-1">1</label>
+		                    <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		                    <label for="radio-bhk-2">2</label>
+		                    <input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		                    <label for="radio-bhk-3">3</label>
+		                    <input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		                    <label for="radio-bhk-4">4</label>
+		                    <input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+		                    <label for="radio-bhk-5">5</label>
+
+
+                        <!-- <label for="bhk1" class="bhk">
+                        <input type="radio" id="bhk1" name="a-button" value="option1">
+                        1 BHK</label>
+      
+                        <label for="bhk2" class="bhk">
+                        <input type="radio" id="bhk2" name="a-button" value="option2">
+                        2 BHK</label>
+              
+                        <label for="bhk3" class="bhk">
+                        <input type="radio" id="bhk3" name="a-button" value="option3">
+                        3 BHK</label>
+
+                        <label for="bhk4" class="bhk">
+                        <input type="radio" id="bhk4" name="a-button" value="option4">
+                        4 BHK</label>
+              
+                        <label for="bhk5" class="bhk">
+                        <input type="radio" id="bhk5" name="a-button" value="option5">
+                        5 BHK</label> -->
+                      </div>
+                    </div>
+
+                    <div class="form-left-side-2">
+                      <p>Bathroom -</p>
+                      <div class="inner-container-2">
+                        <div class="switch-field">
+                          <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+                          <label for="radio-bath-1">1</label>
+                          <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+                          <label for="radio-bath-2">2</label>
+                          <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+                          <label for="radio-bath-3">3</label>
+                          <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+                          <label for="radio-bath-4">4</label>
+                          <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+                          <label for="radio-bath-5">5</label>
+
+
+
+
+
+                        <!-- <label for="br1" class="bathroom">
+                        <input type="radio" id="br1" name="b-button" value="option6">
+                        1 BR</label>
+      
+                        <label for="br2" class="bathroom">
+                        <input type="radio" id="br2" name="b-button" value="option7">
+                        2 BR</label>
+              
+                        <label for="br3" class="bathroom">
+                        <input type="radio" id="br3" name="b-button" value="option8">
+                        3 BR</label>
+
+                        <label for="br4" class="bathroom">
+                        <input type="radio" id="br4" name="b-button" value="option9">
+                        4 BR</label>
+              
+                        <label for="br5" class="bathroom">
+                        <input type="radio" id="br5" name="b-button" value="option10">
+                        5 BR</label> -->
+                      </div>
+                    </div>
+
+                    <div class="form-right-side-2">
+                      <p>Location -</p>
+                      <select class="form-right-side-2" name="" id="uiLocations">
+                        <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                        <option>Hadapsar</option>
+                            <option>Alandi</option>
+                          </select>
+                      <!-- <input type="text" id="places" class="floatLabel" name="Location" value="1000"> -->
+                    </div>
+
+                    <div class="button-container">
+                      <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+                      <!-- <button type="submit" class="submit-button">Get Price</button> -->
+                    </div>
+
+
+                  </div>  
+                </form>
+
+                <div class="price-output">
+                    	<p id="uiEstimatedPrice" class="result" > </p> </div>
+                </div>
+                  
+      </div>
+
+  </header>
+</body>
+</html>
